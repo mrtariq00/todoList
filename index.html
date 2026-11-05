@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="./bootstrap.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="main">
+      <div id="todoMain">
+        <div id="headingSection">
+          <h1>Todo List</h1>
+        </div>
+
+        <div id="addSection">
+          <input type="text" id="dataInput" class="form-control" />
+          <button
+            id="addBtn"
+            onclick="addTodo()"
+            class="btn-solid theme-success"
+          >
+            <i class="bi bi-plus-circle"></i>
+          </button>
+          <button
+            class="btn-solid theme-danger"
+            id="clearTodos"
+            onclick="clearTodo()"
+          >
+            <i class="bi bi-trash"></i> 
+          </button>
+        </div>
+
+        <div id="subHeadingSection">
+          <h3>Task List</h3>
+        </div>
+
+        <div id="listSection">
+          <ol id="todoOl">
+            <!-- <li>
+              <div>
+                <input type="checkbox" class="check" />
+                <span>Hello</span>
+                <div
+                  class="btn-group"
+                  role="group"
+                  aria-label="Basic mixed styles example"
+                >
+                  <button type="button" class="btn-solid theme-danger">
+                    <i class="bi bi-x-circle"></i>
+                  </button>
+
+                  <button type="button" class="btn-solid theme-success">
+                    <i class="bi bi-pencil-square"></i>
+                  </button>
+                </div>
+              </div>
+            </li> -->
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
